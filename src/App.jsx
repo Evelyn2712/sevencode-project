@@ -1,21 +1,17 @@
-import Header from "./components/header/header"
-import Conteudo1 from "./components/Conteudo1/conteudo1"
-import Conteudo2 from "./components/Conteudo2/conteudo2"
-import Conteudo3 from "./components/Conteudo3/conteudo3"
-import Footer from "./components/Footer/footer"
-import './App.css'
+import "./App.css";
+import Home from "./pages/home"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
-function App (){
-  return(
+function App() {
+  return (
     <>
-    <Header/>
-    <Conteudo1/>
-    <Conteudo2/>
-    <Conteudo3/>
-    <Footer/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+        </Routes>
+      </Router>
     </>
   );
-};
+}
 
 export default App;

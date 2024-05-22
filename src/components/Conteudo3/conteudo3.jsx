@@ -13,6 +13,7 @@ const Conteudo3 = () => {
                 Conheça nossos novos recursos, novos commits, novas propostas e
                 muito mais.
               </p>
+              <button className={style.buttonFooter}>Registrar</button>
             </div>
             <div>
               <img src={img3}/>
